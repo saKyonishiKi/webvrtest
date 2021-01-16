@@ -1,0 +1,34 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+</head><body>
+<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+<a-scene id="scene">
+  <a-assets>
+    <img id="sky" src="https://i.pinimg.com/originals/92/6e/4e/926e4e1e080d20a6edfe15c1bfd03bd7.jpg">
+  </a-assets>
+  <a-sky src="#sky"></a-sky>
+  <a-torus-knot color="#dc143c" arc="360" p="1" q="3" radius="4" radius-tubular="0.1"></a-torus-knot>
+  <a-sphere color="#dc143c" radius="3"></a-sphere>
+  <a-torus-knot color="#dc143c" arc="360" p="1" q="2" radius="7" radius-tubular="0.1"></a-torus-knot>
+  <a-torus-knot color="#dc143c" arc="400" p="2" q="1" radius="5" radius-tubular="0.1"></a-torus-knot>
+  <a-circle color="white" width="4" height="2" position="0 0 2.5"></a-circle>>
+  <a-torus-knot color="#dc143c" arc="180" p="1" q="1" radius="10" radius-tubular="0.1"></a-torus-knot>
+  <a-text value="d=(^o^)=b" color="white" position="0 10 0" width="100" height="100"></a-text>
+  <!-- <script type="module">
+    for (let j = 0; j < 10; j++) {
+      for (let i = 0; i < 10; i++) {
+        const box = document.createElement("a-sphere");
+        //box.setAttribute("position", (i * 1.5) + " " + (j * 1.5) + " -5");
+        //box.setAttribute("position", (i * 1.5) + " 1 " + (j * 1.5));
+        //box.setAttribute("position", { x: i * 1.5, y: 1, z: j * 1.5 });
+        box.setAttribute("position", { x: i * 1.5 - 5, y: Math.random() * 5, z: j * 1.5 - 5 });
+        box.setAttribute("width", 1);
+        box.setAttribute("height", 1);
+        box.setAttribute("depth", 1);
+        box.setAttribute("color", "yellow");
+        scene.appendChild(box);
+      }
+    }
+    </script> -->
+</a-scene>
+</body>
+</html>
